@@ -20,12 +20,10 @@ How to Use.
 2.) After going into the file directory, open your terminal and use "npm start" to open the web app.
 
 
-3.) Go into the "AegisAPI" file directory and use your OS Django Strart Server command.
+3.) Go into the "AegisAPI" file directory and use your OS Django Start Server command.
 - (Windows = "python manage.py runserver OR py manage.py runserver")
 - (MacOS/Linx = "python manage.py runserver")
 
 4.) You should now be able to use the Web App and interact with the API.
-
-Most things in the API are hard coded, so don't worry about changing anything.
 
 I'm working on having this all setup on a public .com domain, but this will do for now.

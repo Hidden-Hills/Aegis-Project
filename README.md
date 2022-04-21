@@ -8,7 +8,7 @@ The software which would work natively on a camera, is primarilly coded in Pytho
 
 The actual "Web App" which the end company would've used to interact with the camera embedded software is made with ReactJS.
 
-The API is made with Django, using MongoDB.
+The API is made with Django, using MongoDB for the database.
 
 Feel free to contribute and ask questions.
 

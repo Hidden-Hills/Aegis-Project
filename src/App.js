@@ -4,8 +4,7 @@ import Stack from '@mui/material/Stack';
 import CameraMaster from './Cameras';
 import AegisMaster from './Aegis';
 import DataMaster from './DataCenter';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import {Route,Switch, BrowserRouter as Router} from 'react-router-dom';
+import {Route,Routes, BrowserRouter as Router} from 'react-router-dom';
 import AdminMaster from './AdminPanel';
 import 'remixicon/fonts/remixicon.css'
 import SettingsMaster from './Settings';
@@ -24,23 +23,16 @@ function App (){
     <p className="button" style={{}}><a href="/Settings">Settings</a></p>
     </div>   
     </Stack>
-      <CSSTransitionGroup
-        transitionName="example"
-        transitionAppear={true}
-        transitionAppearTimeout={500}
-        transitionEnter={true}
-        transitionLeave={true}>
         <Router>
-          <Switch>
+          <Routes>
             <Route exact path="/" component={AdminMaster}/>
             <Route path="/AdminPanel" component={AdminMaster}/>
             <Route path="/Cameras" component={CameraMaster}/>
             <Route path="/DataCenter" component={DataMaster}/>
             <Route path="/Aegis" component={AegisMaster}/>
             <Route path="/Settings" component={SettingsMaster}/>
-          </Switch>
+          </Routes>
         </Router>
-      </CSSTransitionGroup>
   </div>
   )
 }
